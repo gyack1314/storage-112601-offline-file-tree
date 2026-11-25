@@ -1,0 +1,7 @@
+{"at":0,"kind":"root","record":{"rev":1,"nodes":[{"id":"d","parent":"/","name":"lab","kind":"d"},{"id":"u","parent":"/","name":"unrelated","kind":"d"}]}}
+{"at":1,"kind":"edit","record":{"client":"a","batch":"drop","base":1,"ops":[{"op":"delete","id":"d"}]}}
+{"at":2,"kind":"commit","record":{"batch":"drop"}}
+{"at":3,"kind":"edit","record":{"client":"b","batch":"new","base":1,"ops":[{"op":"create","id":"f","parent":"d","name":"run","kind":"f","blob":"B"},{"op":"move","id":"u","parent":"/","name":"kept"}]}}
+{"at":4,"kind":"blob","record":{"batch":"new","blob":"B","text":"run"}}
+{"at":5,"kind":"commit","record":{"batch":"new"}}
+{"at":6,"kind":"inspect","record":{"batch":"new"}}

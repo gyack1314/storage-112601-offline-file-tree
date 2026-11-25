@@ -1,0 +1,11 @@
+{"at":0,"kind":"root","record":{"rev":1,"nodes":[{"id":"d","parent":"/","name":"lab","kind":"d"},{"id":"f","parent":"d","name":"run","kind":"f","text":"v1"}]}}
+{"at":1,"kind":"open","record":{"reader":"old","rev":1}}
+{"at":2,"kind":"edit","record":{"client":"a","batch":"move","base":1,"ops":[{"op":"move","id":"d","parent":"/","name":"archive"}]}}
+{"at":3,"kind":"commit","record":{"batch":"move"}}
+{"at":4,"kind":"edit","record":{"client":"b","batch":"fix","base":1,"ops":[{"op":"write","id":"f","blob":"B"}]}}
+{"at":5,"kind":"commit","record":{"batch":"fix"}}
+{"at":6,"kind":"blob","record":{"batch":"fix","blob":"B","text":"corrected"}}
+{"at":7,"kind":"restart","record":{}}
+{"at":8,"kind":"commit","record":{"batch":"fix"}}
+{"at":9,"kind":"read","record":{"reader":"old","path":"/lab/run"}}
+{"at":10,"kind":"inspect","record":{"id":"f"}}
